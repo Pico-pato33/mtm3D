@@ -1,0 +1,7 @@
+id,nombre,categoría,fotos,descripción,tamaño,colores,precio,autor,licencia,enlace_original,activa
+1,Soporte de móvil (ejemplo),Escritorio,,"Soporte sencillo, con ángulo ajustable. Ideal para ""videollamadas"".",12 cm,negro|blanco|rojo,4 €,Autor de ejemplo,CC BY,https://example.com/modelo-1,sí
+2,Llavero con forma de hoja (ejemplo),Accesorios,,Llavero ligero y resistente.,6 cm,verde|negro,2 €,Autor de ejemplo,CC BY-SA,https://example.com/modelo-2,sí
+3,Organizador de cables (ejemplo),Escritorio,,Mantiene los cables ordenados en la mesa.,8 cm,negro|gris,A consultar,Autor de ejemplo,CC0,https://example.com/modelo-3,sí
+4,Maceta pequeña (ejemplo),Hogar,,Maceta para suculentas con plato incluido.,7 cm,blanco|terracota,3 €,Autor de ejemplo,CC BY,https://example.com/modelo-4,sí
+5,Posavasos hexagonal (ejemplo),Hogar,,Posavasos con relieve de panal 🐝.,10 cm,negro|amarillo,A consultar,Autor de ejemplo,CC BY,https://example.com/modelo-5,sí
+6,Pieza desactivada (ejemplo),Hogar,,Esta pieza no debe verse en la web.,5 cm,negro,1 €,Autor de ejemplo,CC BY-NC,https://example.com/modelo-6,no
