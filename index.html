@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mtm_3D · Piezas impresas en 3D bajo pedido</title>
+  <meta name="description" content="Elige tus piezas impresas en 3D y haz tu pedido por WhatsApp.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="mtm_3D, inicio">mtm_3D</a>
+    <button id="open-cart" class="btn btn-primary" type="button">
+      Mi selección (<span id="cart-count">0</span>)
+    </button>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Piezas impresas en 3D, hechas para ti</h1>
+      <p>Marca las que te gusten, envía tu selección y te contesto por WhatsApp para confirmar precio y plazo. Cada pieza se imprime bajo pedido.</p>
+    </section>
+
+    <section class="controls" aria-label="Buscar y filtrar">
+      <label class="visually-hidden" for="search">Buscar piezas</label>
+      <input id="search" type="search" placeholder="Buscar piezas…" autocomplete="off">
+      <label class="visually-hidden" for="category">Categoría</label>
+      <select id="category"><option value="">Todas las categorías</option></select>
+    </section>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+    <section id="grid" class="grid" aria-label="Catálogo"></section>
+  </main>
+
+  <footer class="footer">
+    <section>
+      <h2>Cómo funciona</h2>
+      <ol>
+        <li>Marca las piezas que quieres en “Añadir a mi selección”.</li>
+        <li>Elige cantidad y color, y deja tu nombre y un contacto.</li>
+        <li>Envía el pedido: se abrirá WhatsApp con el resumen listo para mandar.</li>
+        <li>Te confirmo precio y plazo, y pagas por Bizum o transferencia antes de imprimir.</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Créditos</h2>
+      <p>Los diseños pertenecen a sus autores originales, que aparecen indicados en cada pieza con su licencia y un enlace al modelo. Las fotos son de las piezas impresas por mtm_3D.</p>
+    </section>
+    <section>
+      <h2>Privacidad</h2>
+      <p>Solo te pido nombre y un contacto para gestionar tu pedido. Los datos los veo únicamente yo y no se comparten con nadie.</p>
+    </section>
+    <p class="copyright">© mtm_3D</p>
+  </footer>
+
+  <dialog id="piece-dialog" class="dialog" aria-labelledby="piece-title">
+    <div id="piece-body"></div>
+  </dialog>
+
+  <div id="overlay" class="overlay" hidden></div>
+  <aside id="cart-panel" class="cart-panel" aria-labelledby="cart-title" aria-hidden="true">
+    <div class="cart-head">
+      <h2 id="cart-title">Mi selección</h2>
+      <button id="close-cart" class="btn btn-ghost" type="button" aria-label="Cerrar">✕</button>
+    </div>
+    <div id="cart-content"></div>
+  </aside>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
